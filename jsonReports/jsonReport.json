@@ -1,0 +1,269 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\mamat\\Downloads\\playwright_UI\\playwright.config.ts",
+    "rootDir": "C:/Users/mamat/Downloads/playwright_UI",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/mamat/Downloads/playwright_UI/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/mamat/Downloads/playwright_UI",
+        "testIgnore": [],
+        "testMatch": [
+          "pomtests/addToCart.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.2",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "pomtests\\addToCart.test.ts",
+      "file": "pomtests/addToCart.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Registration_01",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6050,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Your Account Has Been Created!\"\u001b[39m\nReceived: \u001b[31m\"Register Account\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Your Account Has Been Created!\"\u001b[39m\nReceived: \u001b[31m\"Register Account\"\u001b[39m\n    at C:\\Users\\mamat\\Downloads\\playwright_UI\\pomtests\\addToCart.test.ts:28:36",
+                    "location": {
+                      "file": "C:\\Users\\mamat\\Downloads\\playwright_UI\\pomtests\\addToCart.test.ts",
+                      "column": 36,
+                      "line": 28
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m register\u001b[33m.\u001b[39mclickTerms()\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m register\u001b[33m.\u001b[39mclickContinue()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m         expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"Your Account Has Been Created!\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m        \u001b[90m// console.log('STATUS: ' + testInfo.status);\u001b[39m\n \u001b[90m 30 |\u001b[39m\n \u001b[90m 31 |\u001b[39m })\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\mamat\\Downloads\\playwright_UI\\pomtests\\addToCart.test.ts",
+                        "column": 36,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Your Account Has Been Created!\"\u001b[39m\nReceived: \u001b[31m\"Register Account\"\u001b[39m\n\n\u001b[0m \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m register\u001b[33m.\u001b[39mclickTerms()\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m register\u001b[33m.\u001b[39mclickContinue()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m         expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"Your Account Has Been Created!\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m        \u001b[90m// console.log('STATUS: ' + testInfo.status);\u001b[39m\n \u001b[90m 30 |\u001b[39m\n \u001b[90m 31 |\u001b[39m })\u001b[0m\n\u001b[2m    at C:\\Users\\mamat\\Downloads\\playwright_UI\\pomtests\\addToCart.test.ts:28:36\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-08T15:48:08.289Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\mamat\\Downloads\\playwright_UI\\test-results\\pomtests-addToCart-Registration-01\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mamat\\Downloads\\playwright_UI\\test-results\\pomtests-addToCart-Registration-01\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\mamat\\Downloads\\playwright_UI\\test-results\\pomtests-addToCart-Registration-01\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\mamat\\Downloads\\playwright_UI\\pomtests\\addToCart.test.ts",
+                    "column": 36,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5562f48897df24eb67b8-e698e40ef3559304006c",
+          "file": "pomtests/addToCart.test.ts",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "title": "Login Test_02",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6540,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-08T15:48:15.804Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\mamat\\Downloads\\playwright_UI\\test-results\\pomtests-addToCart-Login-Test-02\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mamat\\Downloads\\playwright_UI\\test-results\\pomtests-addToCart-Login-Test-02\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5562f48897df24eb67b8-15984f504bac66227219",
+          "file": "pomtests/addToCart.test.ts",
+          "line": 34,
+          "column": 5
+        },
+        {
+          "title": "Add to Cart Test_03",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30369,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\mamat\\Downloads\\playwright_UI\\pages\\addToCart.ts",
+                        "column": 21,
+                        "line": 26
+                      },
+                      "message": "Error: locator.waitFor: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//a[.=\\'View Cart \\']') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages\\addToCart.ts:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m         \u001b[90m// await this.page.waitFor\u001b[39m\n \u001b[90m 25 |\u001b[39m         \u001b[36mconst\u001b[39m toast \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//a[.='View Cart ']\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m toast\u001b[33m.\u001b[39mwaitFor({state\u001b[33m:\u001b[39m\u001b[32m\"visible\"\u001b[39m})\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m         \u001b[36mreturn\u001b[39m toast\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m }\u001b[0m\n\u001b[2m    at AddToCartPage.isToastVisible (C:\\Users\\mamat\\Downloads\\playwright_UI\\pages\\addToCart.ts:26:21)\u001b[22m\n\u001b[2m    at C:\\Users\\mamat\\Downloads\\playwright_UI\\pomtests\\addToCart.test.ts:59:46\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-08T15:48:22.573Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\mamat\\Downloads\\playwright_UI\\test-results\\pomtests-addToCart-Add-to-Cart-Test-03\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\mamat\\Downloads\\playwright_UI\\test-results\\pomtests-addToCart-Add-to-Cart-Test-03\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\mamat\\Downloads\\playwright_UI\\test-results\\pomtests-addToCart-Add-to-Cart-Test-03\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5562f48897df24eb67b8-6d8e71e8310986ac105c",
+          "file": "pomtests/addToCart.test.ts",
+          "line": 47,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-08T15:48:07.542Z",
+    "duration": 45696.33,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
